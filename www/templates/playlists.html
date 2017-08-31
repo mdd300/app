@@ -2,7 +2,19 @@
   <ion-content>
     <ion-list>
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
-        {{playlist.title}}
+          <div class = "card">
+   <div class = "item item-avatar">
+       <img class = "full-image" src = "http://img.freepik.com/icones-gratis/documento_318-130469.jpg?size=338&ext=jpg"> <h2>{{playlist.title}}</h2>
+   </div>
+
+   <div class = "item item-body">
+      Dados do documento
+      <br>
+      Data
+      <br>
+      Usuário que adicionou
+   </div>
+</div>
       </ion-item>
     </ion-list>
   </ion-content>
